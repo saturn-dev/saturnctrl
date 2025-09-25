@@ -1,0 +1,103 @@
+@import 'https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap';
+@import url('themes.css');
+@import url('misc.css');
+:root {
+    --background: #090b0d; /* Deep black-blue for a modern feel */
+    --background2: #0c0e11; /* Softened for better depth */
+    --background3: #101317; /* Subtle contrast for layering */
+    --background4: #0d0f12; /* Kept for consistency */
+    --hoverbackground: #161a1e; /* Improved hover contrast */
+    
+    /* Borders & Outlines */
+    --outline: #1a1e22; /* Dark grey-blue for subtle depth */
+    --border: #0096b3; /* Darkened cyan for a sleek look */
+    
+    /* Primary Theme Colors */
+    --theme: #00b0cc; /* Darker neon cyan (balanced glow) */
+    --theme2: #008aa6; /* Even darker complement for smooth contrast */
+    --theme-grad: #00b0cc, #008aa6; /* Smooth cyber gradient */
+    --theme-rgba: rgba(0, 176, 204, 0.2); /* Ensure semicolon is here */
+
+    /* Text Colors */
+    --text: #e6e6e6; /* Slightly off-white for softer contrast */
+    --text2: #00b0cc; /* Primary accent */
+    --text3: #008aa6; /* Secondary accent */
+    --text-secondary: #a8a8a8; /* Darker grey for reduced strain */
+    
+    /* Navigation & Buttons */
+    --nav-btn: #c0c0c0; /* Slightly muted for balance */
+    --nav-btn-hover: #00b0cc; /* Cyan hover effect */
+    
+    }
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background2);
+    z-index: 999;
+    transition: opacity 0.5s ease-out; /* Smooth fade-out transition */
+}
+
+.loader-ring {
+    width: 80px;
+    height: 80px;
+    border: 8px solid var(--theme-rgba);
+    border-top: 8px solid var(--theme);
+    border-radius: 50%;
+    animation: rotateRing 1.5s linear infinite;
+}
+
+#content {
+    display: none;
+}
+
+.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#random-message {
+    position: fixed;
+    bottom: 38%;  /* Closer to the ring */
+    transform: translateX(-50%);
+    width: auto;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeInSlideUp 1s forwards;
+}
+
+@keyframes rotateRing {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
