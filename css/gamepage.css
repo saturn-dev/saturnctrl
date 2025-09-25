@@ -1,8 +1,8 @@
 @import 'https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap';
-@import url('navbar.css');
-@import url('themes.css');
-@import url('misc.css');
-@import url('tags.css');
+@import url('https://cdn.jsdelivr.net/gh/saturn-dev/saturnctrl@main/navbar.css');
+@import url('https://cdn.jsdelivr.net/gh/saturn-dev/saturnctrl@main/themes.css');
+@import url('https://cdn.jsdelivr.net/gh/saturn-dev/saturnctrl@main/misc.css');
+@import url('https://cdn.jsdelivr.net/gh/saturn-dev/saturnctrl@main/tags.css');
 
 .game-container {
     opacity: 1;

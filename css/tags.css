@@ -1,0 +1,71 @@
+@-webkit-keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    }
+.status-label {
+    background: linear-gradient(45deg, #FF0000, #FF6F6F, #FF0000, #FF4500, #FF0000, #FF6F6F, #FF0000);
+    background-size: 200%;
+    -webkit-animation: gradientShift 5s ease-in infinite;
+}
+
+.classic {
+    background: linear-gradient(45deg,#FFFF00, #FFD700, #FFFF00, #FFA500, #FFFF00, #FFD700, #FFFF00);
+    background-size: 200%;
+    -webkit-animation: gradientShift 5s ease-in infinite;
+}
+
+.hot {
+    background: linear-gradient(45deg,#FFA500, #FF8C00, #FFA500, #FF4500, #FFA500, #FF8C00, #FFA500);
+    background-size: 200%;
+    -webkit-animation: gradientShift 5s ease-in infinite;
+}
+
+.updated {
+    background: linear-gradient(45deg,#00FF00, #32CD32, #00FF00, #228B22, #00FF00, #32CD32, #00FF00);
+    background-size: 200%;
+    -webkit-animation: gradientShift 5s ease-in infinite;
+}
+
+.status-label {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 2px 10px;
+    border-radius: 7px;
+    display: flex
+    
+;
+    align-items: center;
+    text-shadow: -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, 1px 1px 2px #000;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.small {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 2px 10px;
+    border-radius: 5px;
+    display: flex
+;
+    align-items: center;
+    text-shadow: -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, 1px 1px 2px #000;
+}
