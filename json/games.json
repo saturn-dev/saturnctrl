@@ -78,6 +78,24 @@
             "description": "BasketBros is a fast-paced basketball game with online and offline gameplay. Choose a basketballer, customize your style, and compete in singleplayer and multiplayer games. Throw down some sick dunks and win the game to earn upgrades and unlockables.",
             "special": "None"
         },
+         {
+            "name": "Football Bros",
+            "author": "Blue Wizard Digital",
+            "description": "Football Bros is a simple, fast-paced football game with all kinds of crazy action!",
+            "special": "New"
+        },
+        {
+            "name": "Baseball Bros",
+            "author": "Blue Wizard Digital",
+            "description": "Baseball Bros is a simple, fast-paced baseball game that's easy to learn and has lots of crazy hijinks!",
+            "special": "New"
+        },
+        {
+            "name": "Wrestle Bros",
+            "author": "Blue Wizard Digital",
+            "description": "Play against friends online or wrestle the CPU to unlock new wrestlers and gear. Fly off the top rope, smash your opponent, or bounce off the ropes!",
+            "special": "New"
+        },
         {
             "name": "Bouncy Basketball",
             "author": "Dreamon Studios AB",
@@ -545,6 +563,12 @@
             "author": "Pie On A Plate Productions",
             "description": "Based on a creepypasta, the Backrooms brings a nostalgic feeling of being lost in endless piles of empty rooms with fluorescent lights at full hum-buzz. You have to find your way out, but of course, some friends don't want you to leave. If you don't wake up in time, your nightmares will drown you.",
             "special": "None"
+        },
+        {
+            "name": "Infinite Craft",
+            "author": "Neal Agarwa",
+            "description": "A crafting game where you can make anything. No really it's pretty much endless I think. Start with Water, Fire, Wind, and Earth and branch out to the rest.",
+            "special": "New"
         },
         {
             "name": "The Impossible Quiz 2",
