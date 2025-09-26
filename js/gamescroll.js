@@ -1,19 +1,24 @@
 async function fetchImages() {
     try {
-        let response = await fetch('https://cdn.jsdelivr.net/gh/saturn-dev/saturnctrl@main/images/game-images/normal/'); 
-        let text = await response.text();
-        let parser = new DOMParser();
-        let doc = parser.parseFromString(text, 'text/html');
+        let response = await fetch("https://cdn.jsdelivr.net/gh/saturn-dev/saturnctrl@main/images/game-images/normal/images.json");
+        let files = await response.json();
 
-        let imageLinks = [...doc.querySelectorAll('a[href$=".png"], a[href$=".jpg"], a[href$=".jpeg"], a[href$=".webp"]')]
-            .map(a => a.getAttribute('href').replace(/^\/+/, '')); 
+        // Map filenames -> full URLs
+        let imgs = files.map(img => 
+            `https://cdn.jsdelivr.net/gh/saturn-dev/saturnctrl@main/images/game-images/normal/${img}`
+        );
 
-        return imageLinks.map(img => `${img}`);
+        console.log("Images from JSON:", imgs);
+        return imgs;
     } catch (error) {
-        console.error("Error fetching images:", error);
+        console.error("Error loading images.json:", error);
         return [];
     }
 }
+
+
+
+
 
 function createGameElement(imageSrc) {
     let game = document.createElement("div");
