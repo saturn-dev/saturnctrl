@@ -1,6 +1,5 @@
 async function fetchImages() {
     return [
-  "1-on-1-soccer.png",
   "10-minutes-till-dawn.png",
   "2048.png",
   "a-dark-room.png",
